@@ -1,6 +1,6 @@
 # Hi, I'm Sinan 👋
 
-**Full-Stack Developer & AI Engineer** — I build production-grade web applications with AI at their core: multi-agent workflows, RAG pipelines, and human-in-the-loop automation.
+**AI Engineer with a 6+ year industrial background** — I build production-grade web applications with AI at their core: multi-agent workflows, RAG pipelines, and human-in-the-loop automation.
 
 📍 Germany · 💼 [LinkedIn](https://www.linkedin.com/in/kahraman-sinan/) · 🌐 [sjcode.de](https://sjcode.de)
 
