@@ -1,43 +1,67 @@
-# Hi, I'm Sinan 👋
+# Hi, I'm Sinan
 
-**AI Engineer with a 6+ year industrial background** — I build production-grade web applications with AI at their core: multi-agent workflows, RAG pipelines, and human-in-the-loop automation.
+**AI Engineer with an industrial automation background** — I build production-oriented AI systems with agent workflows, RAG, human-in-the-loop controls, and reliable software engineering around them.
 
-📍 Germany · 💼 [LinkedIn](https://www.linkedin.com/in/kahraman-sinan/) · 🌐 [sjcode.de](https://sjcode.de)
+Germany · [LinkedIn](https://www.linkedin.com/in/kahraman-sinan/) · [sjcode.de](https://sjcode.de)
 
 ---
 
-## 🚀 Featured Projects
+## Featured Projects
 
 ### [Booking Email Platform](https://github.com/siinanXD/Booking-email-check)
-AI-powered email processing for vacation rental hosts (Airbnb, Booking.com & co.). Classifies incoming mail, extracts booking data, and drafts replies — with mandatory human review before anything is sent. Multi-tenant, WhatsApp notifications, deployed on Railway.
-> Python · Flask · LangGraph · GPT-4o-mini · MongoDB Atlas · React 19 · TypeScript
+AI-powered email processing for vacation-rental operations. Classifies incoming mail, extracts booking data, drafts replies, and keeps a mandatory human approval step before sending. Includes multi-tenancy, WhatsApp notifications, observability, CI, and Railway deployment.
 
-### [Maintenance AI Assistant](https://github.com/siinanXD/MaintanaceAIsisst)
-Full-stack SaaS for industrial maintenance teams: tasks, fault catalogs, shift planning, and an auditable RAG knowledge layer that answers with sources and falls back to local rules without an API key. Role-based access control, CI with coverage gate, Docker deployment.
-> Flask · SQLAlchemy · PostgreSQL/pgvector · OpenAI · React islands · Docker
+> Python · Flask · LangGraph · MongoDB Atlas · React · TypeScript · Langfuse · Railway
 
-### [FlowMind](https://github.com/siinanXD/AgFlow)
-Multi-agent business process automation for SMBs — from incoming email to invoice. 11 specialized agents orchestrated with LangGraph, a cost-optimized 3-stage classification pipeline (regex → embeddings → LLM), and a live pixel-art dashboard visualizing every agent in the browser.
-> FastAPI · LangGraph · MongoDB Vector Search · Redis · Celery · Stripe · React
+### [Maintenance AI Assistant](https://github.com/siinanXD/maintenance-ai-assistant)
+Full-stack AI system for industrial maintenance teams. Combines tasks, fault catalogs, machine knowledge, shift workflows, and source-backed RAG with role-aware access control, local fallbacks, CI quality gates, and Docker deployment.
+
+> Python · Flask · SQLAlchemy · PostgreSQL/pgvector · OpenAI-compatible providers · React · Docker
+
+### [Online Lerncampus](https://github.com/siinanXD/Online-Lerncampus)
+Privacy-conscious learning platform for technical apprenticeships with a structured curriculum, exam-style questions, progress tracking, content-generation workflows, and review gates for AI-generated learning material.
+
+> FastAPI · Python · Learning analytics · Privacy-by-design · Content workflows
 
 ### [sjcode.de](https://github.com/siinanXD/SJCODE-website)
-My freelance business website — statically exported Next.js 15, self-hosted fonts, works without JavaScript, SEO-optimized with JSON-LD.
-> Next.js 15 · React 19 · TypeScript · Netlify
+My software and AI automation website, built as a performant Next.js application with SEO-focused structured data and a production deployment workflow.
+
+> Next.js · React · TypeScript · Netlify
 
 ---
 
-## 🛠️ Tech Stack
+## Engineering Focus
 
-**Backend:** Python (Flask, FastAPI), SQLAlchemy, Celery, REST APIs, JWT auth
-**AI/LLM:** LangGraph, RAG pipelines, OpenAI/Anthropic APIs, vector search (pgvector, MongoDB Atlas), Langfuse observability
-**Frontend:** React, TypeScript, Next.js, Tailwind CSS, Vite
-**Data:** MongoDB, PostgreSQL, Redis, SQLite
-**DevOps:** Docker, GitHub Actions CI, Railway, Netlify, Hetzner
+**Agent Systems:** durable workflows, tool use, human approval, provider routing, auditability
+
+**AI Engineering:** RAG, retrieval pipelines, structured outputs, evaluation, observability, guardrails
+
+**Backend:** Python, FastAPI, Flask, SQLAlchemy, REST APIs, background jobs
+
+**Data:** PostgreSQL, pgvector, MongoDB, Redis, SQLite
+
+**Frontend:** React, TypeScript, Next.js, Tailwind CSS
+
+**Production:** Docker, GitHub Actions, Railway, CI/CD, typing, testing, secret-safe configuration
 
 ---
 
-## 💡 How I work
+## Current Direction
 
-- Human-in-the-loop by design — AI drafts, humans approve
-- Quality gates in CI: linting, typing, tests with coverage thresholds
-- Security first: no secrets in repos, PII masking, permission-scoped data access
+I am currently concentrating on reusable AI-engineering infrastructure rather than isolated demo applications:
+
+- agent runtime patterns for resumable, approval-gated workflows
+- secure MCP/tool integration patterns
+- production RAG with measurable retrieval quality
+- context engineering with `AGENTS.md`, architecture decisions, and structured project knowledge
+- privacy-safe automation that separates private operational context from publishable reference implementations
+
+---
+
+## How I Build
+
+- Human-in-the-loop for consequential AI actions
+- Tests, linting, typing, and build checks as release gates
+- Explicit architecture and decision records instead of hidden conventions
+- No secrets or private operational data in public repositories
+- Demo and local-fallback modes where practical so projects can be evaluated without production credentials
