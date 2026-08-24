@@ -8,6 +8,13 @@ Germany · [LinkedIn](https://www.linkedin.com/in/kahraman-sinan/) · [sjcode.de
 
 ## Featured Projects
 
+### [Agent Eval Harness](https://github.com/siinanXD/agent-eval-harness)
+[![CI](https://github.com/siinanXD/agent-eval-harness/actions/workflows/ci.yml/badge.svg)](https://github.com/siinanXD/agent-eval-harness/actions/workflows/ci.yml)
+
+Deterministic regression gates for LLM agent behaviour, across providers, in CI. Scores generation and retrieval separately, stores each run, and fails the build when results regress against the last known-good baseline. No LLM judge in the gate — every scorer returns the same score for the same output, so a moved number always means the agent moved.
+
+> Python · evaluation · multi-provider · regression testing · CI · RAG · standard-library-only
+
 ### [Booking Email Platform](https://github.com/siinanXD/Booking-email-check)
 AI-powered email processing for vacation-rental operations. Classifies incoming mail, extracts booking data, drafts replies, and keeps a mandatory human approval step before sending. Includes multi-tenancy, WhatsApp notifications, observability, CI, and Railway deployment.
 
