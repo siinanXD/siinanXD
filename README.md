@@ -25,6 +25,11 @@ Full-stack AI system for industrial maintenance teams. Combines tasks, fault cat
 
 > Python · Flask · SQLAlchemy · PostgreSQL/pgvector · OpenAI-compatible providers · React · Docker
 
+### [Agent Eval Harness](https://github.com/siinanXD/agent-eval-harness)
+Provider-neutral regression gates for LLM agents. Replays fixed cases, scores generation and retrieval separately, stores comparable runs, and fails CI when quality, coverage, or error rate regresses.
+
+> Python · Multi-provider evaluation · RAG metrics · Deterministic scoring · GitHub Actions
+
 ### [Online Lerncampus](https://github.com/siinanXD/Online-Lerncampus)
 Privacy-conscious learning platform for technical apprenticeships with a structured curriculum, exam-style questions, progress tracking, content-generation workflows, and review gates for AI-generated learning material.
 
