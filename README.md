@@ -1,12 +1,18 @@
 # Hi, I'm Sinan
 
-**AI Engineer with an industrial automation background** — I build production-oriented AI systems with agent workflows, RAG, human-in-the-loop controls, and reliable software engineering around them.
+**AI Engineer with 7 years in industrial automation** — I build production-oriented AI systems with agent workflows, RAG, human-in-the-loop controls, and reliable software engineering around them.
 
 Germany · [LinkedIn](https://www.linkedin.com/in/kahraman-sinan/) · [sjcode.de](https://sjcode.de)
 
 ---
 
 ## Featured Projects
+
+### [Document Intelligence MVP](https://github.com/siinanXD/document-intelligence-mvp)
+
+Multi-tenant document intelligence service. Documents are uploaded, parsed into a normalized representation, chunked with provenance, embedded, indexed for semantic search, and answered over with grounded citations. 229 automated tests, 12 Alembic migrations, and two CI workflows including a merge gate. The evaluation dataset ships with its own licence and provenance, and privacy tests assert that API keys never reach logs or traces.
+
+> Python · FastAPI · PostgreSQL · Qdrant · Alembic · RAG · multi-tenancy · GitHub Actions
 
 ### [Agent Eval Harness](https://github.com/siinanXD/agent-eval-harness)
 [![CI](https://github.com/siinanXD/agent-eval-harness/actions/workflows/ci.yml/badge.svg)](https://github.com/siinanXD/agent-eval-harness/actions/workflows/ci.yml)
@@ -24,11 +30,6 @@ AI-powered email processing for vacation-rental operations. Classifies incoming 
 Full-stack AI system for industrial maintenance teams. Combines tasks, fault catalogs, machine knowledge, shift workflows, and source-backed RAG with role-aware access control, local fallbacks, CI quality gates, and Docker deployment.
 
 > Python · Flask · SQLAlchemy · PostgreSQL/pgvector · OpenAI-compatible providers · React · Docker
-
-### [Agent Eval Harness](https://github.com/siinanXD/agent-eval-harness)
-Provider-neutral regression gates for LLM agents. Replays fixed cases, scores generation and retrieval separately, stores comparable runs, and fails CI when quality, coverage, or error rate regresses.
-
-> Python · Multi-provider evaluation · RAG metrics · Deterministic scoring · GitHub Actions
 
 ### [Online Lerncampus](https://github.com/siinanXD/Online-Lerncampus)
 Privacy-conscious learning platform for technical apprenticeships with a structured curriculum, exam-style questions, progress tracking, content-generation workflows, and review gates for AI-generated learning material.
