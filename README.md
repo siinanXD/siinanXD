@@ -1,6 +1,6 @@
 # Hi, I'm Sinan
 
-**AI Engineer with 7 years in industrial automation.** I spent six years as an electronics technician for industrial systems (Elektroniker für Betriebstechnik) before moving into AI engineering. I build AI systems for the shop floor: maintenance assistants, document intelligence for machine manuals and electrical drawings, and agents that act on real operational data with a human in the loop.
+**AI Engineer with an industrial background.** Trained and worked as an electronics technician for industrial systems (Elektroniker für Betriebstechnik, 2012–2023) before moving into AI engineering in 2024. I build AI systems for the shop floor: maintenance assistants, document intelligence for machine manuals and electrical drawings, and agents that act on real operational data with a human in the loop.
 
 Euskirchen, Germany · [LinkedIn](https://www.linkedin.com/in/kahraman-sinan/) · [sjcode.de](https://sjcode.de)
 
@@ -8,29 +8,27 @@ Euskirchen, Germany · [LinkedIn](https://www.linkedin.com/in/kahraman-sinan/) �
 
 ## Featured Projects
 
-### [Maintenance AI Assistant](https://github.com/siinanXD/maintenance-ai-assistant)
-[![CI](https://github.com/siinanXD/maintenance-ai-assistant/actions/workflows/ci.yml/badge.svg)](https://github.com/siinanXD/maintenance-ai-assistant/actions/workflows/ci.yml)
+### [Stromlauf AI](https://github.com/siinanXD/stromlauf-ai) · [Live demo](https://stromlauf-ai.vercel.app)
+[![CI](https://github.com/siinanXD/stromlauf-ai/actions/workflows/ci.yml/badge.svg)](https://github.com/siinanXD/stromlauf-ai/actions/workflows/ci.yml)
 
-Full-stack AI system for industrial maintenance teams. A technician reports a fault with a photo at the machine, a work order is raised from it, spare parts are booked against the order, and legally required inspections (DGUV V3, BetrSichV) are documented with proof. Shift planning follows German working-time rules. A tool-using assistant answers from the plant's own data and manuals, always names its sources, and needs user confirmation before it writes anything.
+Chat over the electrical documentation of a machine: circuit diagrams (PDF, including scans via OCR), terminal plans, parts lists, Siemens STEP 7 AWL/SCL. Every answer cites its source (`[[file|location]]`); signal paths, fault cards and gap lists are computed deterministically without a model call. Ingest, plan-graph and retrieval gates run in CI with fixed thresholds; a weekly paid agent run measures facts, sources and citation validity on a gold set. Demo mode with a sample machine, no uploads, rate-limited.
 
-**Try it in 2 minutes:** runs without an API key through a local mock provider (`docker compose up`). 661 tests with a 75 % coverage gate, 39 Alembic migrations.
+> Python · FastAPI · LangGraph · Docling · RapidOCR · PostgreSQL/pgvector · Next.js · TypeScript · Playwright · Langfuse
 
-> Python · Flask · SQLAlchemy · PostgreSQL/pgvector · OpenAI-compatible providers · React · TypeScript · Docker
+### [Content-Agent-Lernapp](https://github.com/siinanXD/Content-Agent-Lernapp) · [Live](https://content-agent-ashen-nu.vercel.app)
+[![ci](https://github.com/siinanXD/Content-Agent-Lernapp/actions/workflows/ci.yml/badge.svg)](https://github.com/siinanXD/Content-Agent-Lernapp/actions/workflows/ci.yml)
 
-### [Document Intelligence MVP](https://github.com/siinanXD/document-intelligence-mvp)
+Learning app for German vocational training that generates courses from official sources (training regulations, framework curricula). A generator model writes questions, a second model judges them against fixed criteria, and only passing content is published; a human approves. Learning path, spaced repetition, exams, trainer groups with invitation links. Supabase with row-level security, nightly backups with a monthly restore test, Playwright and axe checks on every route, Langfuse traces per unit.
 
-Multi-tenant document intelligence service, built for technical documentation: manuals, datasheets, inspection reports. Documents are uploaded, parsed into a normalized representation, chunked with provenance, embedded, indexed for semantic search, and answered over with grounded citations. "The documents do not say" is a valid answer, and conflicting passages are returned as conflicting rather than smoothed over. 595 tests, 12 Alembic migrations, two CI workflows including a merge gate. Privacy tests assert that API keys never reach logs or traces.
+> Next.js · TypeScript · Supabase/PostgreSQL · Claude Batch API · OpenAI · Playwright · Langfuse · Sentry · PostHog
 
-> Python · FastAPI · PostgreSQL · Qdrant · Docling · Alembic · RAG · multi-tenancy · GitHub Actions
+### [Leitstand](https://github.com/siinanXD/Leitstand) (archived, read-only)
 
-### [Mail Agent](https://github.com/siinanXD/Mail-agent)
-[![CI](https://github.com/siinanXD/Mail-agent/actions/workflows/ci.yml/badge.svg)](https://github.com/siinanXD/Mail-agent/actions/workflows/ci.yml)
+Control plane that ran my repositories autonomously: tasks from Linear, a dispatcher, a second-model reviewer, repair loops, merge gates and a daily note into an Obsidian vault. Replaced in October 2026 by a much smaller setup on top of T3 Code (private). Kept public as a record of what worked and what did not.
 
-Agent for vacation-rental mailboxes. Watches an IMAP inbox, recognises bookings, cancellations, changes and guest messages, assigns them to the right property without duplicates, and answers questions in natural language through nine SQL and vector tools. Counts always come from SQL, meaning from pgvector, never the other way round. Every extracted value is shown against the original mail as literal or inferred. Multi-tenant with PostgreSQL row-level security, 292 tests run in CI against a real PostgreSQL.
+> TypeScript · Next.js · Supabase · GitHub Actions
 
-> Python · FastAPI · LangChain · OpenAI · PostgreSQL/pgvector · Alembic · Langfuse · Twilio · Docker
-
-More repositories: [Agent Eval Harness](https://github.com/siinanXD/agent-eval-harness) (deterministic regression gates for agent behaviour in CI) · [Online Lerncampus](https://github.com/siinanXD/Online-Lerncampus) · [sjcode.de](https://github.com/siinanXD/SJCODE-website)
+Earlier projects, archived and read-only: [Maintenance AI Assistant](https://github.com/siinanXD/maintenance-ai-assistant) (industrial maintenance with work orders, inspections and a tool-using assistant) · [Document Intelligence MVP](https://github.com/siinanXD/document-intelligence-mvp) (multi-tenant RAG over technical documents with grounded citations) · [Mail Agent](https://github.com/siinanXD/Mail-agent) (IMAP agent for vacation-rental mailboxes) · [Agent Eval Harness](https://github.com/siinanXD/agent-eval-harness) · [Online Lerncampus](https://github.com/siinanXD/Online-Lerncampus) · [sjcode.de](https://github.com/siinanXD/SJCODE-website) (this site's source)
 
 ---
 
@@ -38,10 +36,9 @@ More repositories: [Agent Eval Harness](https://github.com/siinanXD/agent-eval-h
 
 I am building AI applications for manufacturing and the German Mittelstand, where I know the domain from the inside:
 
-- **Electrical documentation assistant** (in progress): a chatbot over circuit diagrams, terminal plans, parts lists and Siemens STEP 7 AWL programs that tracks devices (`-K12`), terminals (`-X1:5`) and PLC addresses (`E0.0`) across all documents
+- **Electrical documentation assistant** ([Stromlauf AI](https://github.com/siinanXD/stromlauf-ai), live demo above): a chatbot over circuit diagrams, terminal plans, parts lists and Siemens STEP 7 AWL programs that tracks devices (`-K12`), terminals (`-X1:5`) and PLC addresses (`E0.0`) across all documents
 - **Maintenance and inspection workflows** with legal proof (DGUV V3, BetrSichV) and a human approval step before anything is written
 - **Grounded RAG over machine manuals** with citations, measurable retrieval quality and "the documents do not say" as an honest answer
-- **Predictive maintenance and anomaly detection** on machine and sensor data
 
 ---
 
